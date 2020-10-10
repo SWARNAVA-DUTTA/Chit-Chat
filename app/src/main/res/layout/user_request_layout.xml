@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/fui_transparent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/user_profile_image"
+            android:layout_height="50dp"
+            android:src="@drawable/profile" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="○○○○○○"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:id="@+id/user_profile_name"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_profile_name"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="wants to connect with you"
+                android:textSize="12dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Accept"
+                android:clickable="false"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_button_bg_1"
+                android:layout_marginRight="10dp"
+                android:id="@+id/accept_request"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/txt"
+
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Decline"
+                android:clickable="false"
+                android:background="@drawable/custom_button_bg_2"
+                android:id="@+id/decline_request"
+                android:layout_below="@+id/txt"
+                android:layout_toRightOf="@+id/accept_request"/>
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:text="Request Sent"
+                android:clickable="false"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_button_bg_1"
+                android:id="@+id/request_sent"
+                android:visibility="gone"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/txt"
+                android:layout_toRightOf="@+id/accept_request"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

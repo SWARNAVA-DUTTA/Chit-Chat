@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true">
+<!--<de.hdodenhof.circleimageview.CircleImageView-->
+<!--    android:layout_width="45dp"-->
+<!--    android:layout_height="45dp"-->
+<!--    android:layout_alignParentStart="true"-->
+<!--    android:src="@drawable/profile"-->
+<!--    android:layout_margin="10dp"-->
+<!--    android:id="@+id/message_profile_image"/>-->
+    <TextView
+        android:id="@+id/receiver_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:text="receiver messages"
+       android:background="@drawable/receiver_messages_layout"/>
+    <ImageView
+        android:id="@+id/message_sender_image_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/image_border"
+        android:layout_alignParentEnd="true"
+        android:cropToPadding="true"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/message_receiver_image_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:cropToPadding="true"
+
+        android:background="@drawable/image_border"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/sender_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="@+id/receiver_message_text"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:text="sender messages"
+        android:background="@drawable/sender_messages_layout"/>
+    <LinearLayout
+        android:id="@+id/sender_layout_voice"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:visibility="visible"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button_bg_2"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="-3dp"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/sender_btn_play_chat"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_baseline_play_arrow_24"
+                android:layout_margin="10dp"
+                android:background="@color/fui_transparent"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:visibility="visible"
+                />
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/sender_v_length"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/white" />
+        <Chronometer
+            android:id="@+id/sender_tv_duration"
+            android:visibility="gone"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="01:00"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/receiver_layout_voice"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:visibility="visible"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/receiver_messages_layout"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="-3dp"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/receiver_btn_play_chat"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_baseline_play_arrow_24"
+
+                android:layout_margin="10dp"
+                android:background="@color/fui_transparent"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                />
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/receiver_v_length"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/black" />
+        <Chronometer
+            android:id="@+id/receiver_tv_duration"
+            android:visibility="gone"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="01:00"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</RelativeLayout>

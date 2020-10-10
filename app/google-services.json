@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1024813772122",
+    "firebase_url": "https://chit-chat-fc68f.firebaseio.com",
+    "project_id": "chit-chat-fc68f",
+    "storage_bucket": "chit-chat-fc68f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024813772122:android:e7e088ddec94d828e8d763",
+        "android_client_info": {
+          "package_name": "dutta.swarnava.chitchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024813772122-b6case3dnncfvi18q7mn8pi7ou937q09.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dutta.swarnava.chitchat",
+            "certificate_hash": "219df6cca86e008141d3d639a8bcba695d965867"
+          }
+        },
+        {
+          "client_id": "1024813772122-2brn4t8iv61pq4otpna331ku1s9j1jti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI9ZYz339NqOlgKSir8nyZATt7vUexN3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024813772122-2brn4t8iv61pq4otpna331ku1s9j1jti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

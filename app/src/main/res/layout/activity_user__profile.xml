@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/profile_activity"
+    tools:context=".User_Profile">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/profile"
+        android:id="@+id/user_profile_image"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:id="@+id/user_profile_name" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:id="@+id/user_about" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/user_about"
+    android:gravity="center">
+    <Button
+        android:layout_height="40dp"
+        android:layout_width="150dp"
+        app:cornerRadius="100dp"
+        android:id="@+id/send_message_request"
+        android:layout_margin="10dp"
+        android:text="Send Request"
+        android:background="@drawable/custom_button_bg_1"
+        android:textColor="@color/white" />
+    <Button
+        android:layout_height="40dp"
+        android:layout_width="150dp"
+        app:cornerRadius="100dp"
+        android:id="@+id/decline_message_request"
+        android:layout_margin="10dp"
+        android:text="Decline"
+        android:background="@drawable/custom_button_bg_2"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+
+</LinearLayout>
+
+</RelativeLayout>
